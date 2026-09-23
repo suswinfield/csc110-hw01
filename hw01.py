@@ -2,6 +2,7 @@
 #        Name: Susannah Winfield
 #       Peers: (add any collaborators)
 #  References: https://www.geeksforgeeks.org/python/python-iterate-multiple-lists-simultaneously/
+#  https://www.geeksforgeeks.org/python/assigning-multiple-variables-in-one-line-in-python/
 
 # ------------------------------------------------------
 
@@ -89,6 +90,7 @@ def main():
     # =============================================
     # Your code for part 4 under this line and before the print statements
     result4 = a%b
+    #Prints result of modulo operator for Part 4
     print("Part 4: result =",result4)
     # End of Part 4 ----------------------
 
