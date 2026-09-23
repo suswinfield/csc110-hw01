@@ -62,30 +62,34 @@ def main():
     # Part 2: Power
     # =============================================
     # Your code for part 2 under this line and before the print statements
-    x = 5
-    y = -3
-    St_2 = "Part 2:"
-    print(St_2,"x =",x)
-    print(St_2,"y =",y)
-    result2 = x**(2*(y**4))
-    print(result2)
-
-
+    x,y = [5, -3]
+    result2 = x**2*y**4
+    #listing the variables to be used in the for loop
+    variables2 = [x,y,result2]
+    #prints Part 2 variables to values
+    variables2_names = ["x","y","result"]
+    for v2,v2_n in zip(variables2,variables2_names):
+        print("Part 2:",v2_n,"=",v2)
     # End of Part 2 ----------------------
-
-
-
     # Part 3: Integer divide
     # =============================================
     # Your code for part 3 under this line and before the print statements
-
+    a,b = [100, 13]
+    result3 = a//b
+    #setting up names of variables and actual values in lists to be used in the for loop
+    variables3 = [a,b,result3]
+    variables3_names = ["a","b","result"]
+    #Print Part 3 variables to values
+    for v3,v3_n in zip(variables3,variables3_names):
+        print("Part 3:",v3_n,"=",v3)
     # End of Part 3 ----------------------
 
 
     # Part 4: Modulo
     # =============================================
     # Your code for part 4 under this line and before the print statements
-
+    result4 = a%b
+    print("Part 4: result =",result4)
     # End of Part 4 ----------------------
 
 if __name__ == "__main__":
