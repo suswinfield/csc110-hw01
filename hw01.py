@@ -1,7 +1,8 @@
 # ------------------------------------------------------
 #        Name: Susannah Winfield
 #       Peers: (add any collaborators)
-#  References: (anything you checked to solve this)
+#  References: https://www.geeksforgeeks.org/python/python-iterate-multiple-lists-simultaneously/
+
 # ------------------------------------------------------
 
 
@@ -45,15 +46,27 @@ def main():
     # Part 1: Basic Operations
     # =============================================
     # Your code for part 1 under this line and before the print statements
-    x = 27
-    print("Part 1: x =",x)
-
+    numbers = [27,1,1.5,7,-1]
+    x,y,a,b,c = numbers
+    result = float(b+4*c)
+    variables_names = ["x","y","a","b","c"]
+    for v, n in zip(variables_names, numbers):
+        print("Part 1:",v,"=",n)
+    print("Part 1: result =",result)
     # End of Part 1 ----------------------
 
 
     # Part 2: Power
     # =============================================
     # Your code for part 2 under this line and before the print statements
+    x = 5
+    y = -3
+    St_2 = "Part 2:"
+    print(St_2,"x =",x)
+    print(St_2,"y =",y)
+    result2 = x**(2*(y**4))
+    print(result2)
+
 
     # End of Part 2 ----------------------
 
