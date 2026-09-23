@@ -46,10 +46,13 @@ def main():
     # Part 1: Basic Operations
     # =============================================
     # Your code for part 1 under this line and before the print statements
+    #assigns variable values corresponding to the order they're listed
     numbers = [27,1,1.5,7,-1]
     x,y,a,b,c = numbers
     result = float(b+4*c)
+    #need to make the variables strings so the name is printed instead of the value in the for loop
     variables_names = ["x","y","a","b","c"]
+    # for loop to print variables and their corresponding values
     for v, n in zip(variables_names, numbers):
         print("Part 1:",v,"=",n)
     print("Part 1: result =",result)
